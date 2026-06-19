@@ -5,6 +5,7 @@ import { siteConfig } from "@/config/site.config";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { ThemeStyle } from "@/components/providers/ThemeStyle";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
+import { DemoBadge } from "@/components/layout/DemoBadge";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -64,6 +65,7 @@ export default function RootLayout({
         >
           <SmoothScroll>{children}</SmoothScroll>
         </ThemeProvider>
+        <DemoBadge />
       </body>
     </html>
   );
